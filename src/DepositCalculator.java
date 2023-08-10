@@ -24,9 +24,7 @@ public class DepositCalculator {
         int amount = scanner.nextInt();
         System.out.println("Введите срок вклада в годах:");
         period = scanner.nextInt();
-        System.out.println(
-                "Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:"
-        );
+        System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
         action = scanner.nextInt();
         double pay = 0;
         if (action == 1) {
@@ -34,8 +32,7 @@ public class DepositCalculator {
         } else if (action == 2) {
             pay = calculateComplexPercent(amount, 0.06, period);
         }
-        System.out.println(
-                "Результат вклада: " + amount + " за " + period + " лет превратятся в " + pay);
+        System.out.println("Результат вклада: " + amount + " за " + period + " лет превратятся в " + pay);
     }
 
 }
